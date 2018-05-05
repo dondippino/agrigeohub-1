@@ -1,0 +1,35 @@
+<div class="content-patch">
+    <div class="row">
+        <div class="map col-8"  leaflet [leafletOptions]="leafletOptions"></div>
+        <div class="col-4">
+
+            <ngx-charts-bar-vertical
+                class="chart-container"
+                [view]="view"
+                [scheme]="colorScheme"
+                [schemeType]="schemeType"
+                [customColors]="customColors"
+                [results]="single"
+                [animations]="animations"
+                [gradient]="gradient"
+                [xAxis]="showXAxis"
+                [yAxis]="showYAxis"
+                [legend]="showLegend"
+                [legendTitle]="legendTitle"
+                [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel"
+                [tooltipDisabled]="tooltipDisabled"
+                [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel"
+                [showGridLines]="showGridLines"
+                [barPadding]="barPadding"
+                [roundDomains]="roundDomains"
+                [roundEdges]="roundEdges"
+                [yScaleMax]="yScaleMax"
+                (select)="select($event)"
+                (legendLabelClick)="onLegendLabelClick($event)">
+            </ngx-charts-bar-vertical>
+
+        </div>
+    </div>
+</div>

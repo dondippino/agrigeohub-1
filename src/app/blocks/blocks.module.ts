@@ -8,6 +8,7 @@ import {SidebarComponent} from './sidebar/sidebar';
 import {AppRoutingModule} from '../app-routing.module';
 import {FormsModule} from '@angular/forms';
 
+
 @NgModule({
     imports: [
         PluginsModule, AppRoutingModule, CommonModule, FormsModule
