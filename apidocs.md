@@ -12,27 +12,17 @@
 ## Models  (Database Tables ) 
 
 ### Farmer Profile
-| ----------------------------
 | Column | Data type | Doc
 | --------   |   -----------   |   ---------
 | uuid| uuid | Unique Identifier 
-|   ----   |   -----   |   ------------------------
 | home_address | text | The home address of the farmer 
-|   ---------   |   -----------   |   ----------------------------------
 | state | text | The state  of the farmer 
-|   ----   |   ------   |   ------------------------------------------------------------------
 | lga  | text | The lga of the farmer 
-|   ----   |   ------   |   --------------------------------------------------------------------
 | farmland | <`farmland`> |The famland it has a  one to many relationship  with `famland entity `
-|   --------   |   --------------   |   --------------------------------------------------------------------------
 | Cooperative  | <`coorperative`>|  The coorporatives the famer belongs to
-|   -----------   |   ------------------   |   --------------------------------------------------------------
 | work_address | text | The work address of the farmer 
-|   ------------   |   -------   |   -----------------------------------
 | occupation | text | The home occupation of the farmer 
-|   ----------   |   ----------   |   ----------------------------------
 | farmer | <`user`> | The auth  info of the farmer 
-|   -------   |   ----------   |   -------------------------------------
 
 ### Agent Profile
 | Column | Data type | Doc
