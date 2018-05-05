@@ -20,9 +20,16 @@
             "prefix": "app",
             "styles": [
                 "styles.css",
-                "../node_modules/leaflet/dist/leaflet.css"
+                "../src/assets/css/bootstrap.min.css",
+                "../node_modules/leaflet/dist/leaflet.css",
+                "../src/assets/css/dataTables.bootstrap4.min.css"
+
             ],
-            "scripts": [],
+            "scripts": [
+                "../node_modules/jquery/dist/jquery.min.js",
+                "../node_modules/datatables.net/js/jquery.dataTables.js",
+                "../src/assets/js/dataTables.bootstrap4.min.js"
+            ],
             "environmentSource": "environments/environment.ts",
             "environments": {
                 "dev": "environments/environment.ts",

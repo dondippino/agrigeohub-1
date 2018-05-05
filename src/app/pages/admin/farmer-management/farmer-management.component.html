@@ -1,0 +1,61 @@
+<div class="content-patch">
+    <div class="row">
+        <div class="col-sm-3 col-md-2  sidebar"><sidebar-block></sidebar-block></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <!--<h4>Farmers</h4>-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Farmers</h5>
+                    <div class="col-12 table-responsive-sm">
+                        <hr/>
+                        <div class="btn-group btn-group-toggle center" data-toggle="buttons">
+                            <button type="button" class="btn btn-outline-primary"><i-plus class="middle-align feather-font-patch"></i-plus>&nbsp;Add New Farmer</button>
+                        </div>
+                        <hr/>
+                        <table class="table table-striped table-sm" [data]="data" [options]="options" ngxDatatables>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Job Role</th>
+                                    <!--<th >Actions</th>-->
+                                </tr>
+                            </thead>
+                        </table>
+
+<!--                        <ngx-datatables [ajax]="ajax">
+                            <ngx-datatables-column header="Name"></ngx-datatables-column>
+                            <ngx-datatables-column header="Position"></ngx-datatables-column>
+                            <ngx-datatables-column header="Office"></ngx-datatables-column>
+                            <ngx-datatables-column header="Extension"></ngx-datatables-column>
+                            <ngx-datatables-column header="Start Date"></ngx-datatables-column>
+                            <ngx-datatables-column header="Salary"></ngx-datatables-column>
+                            <ngx-datatables-column header="Actions">
+                                <ng-template ngxDatatablesTemplate="body" let-context>
+                                    <div>
+                                        <a class="btn btn-success" href="javascript:"
+                                            title="Edit">
+                                            <i class="glyphicon glyphicon-pencil"></i>
+                                        </a>
+                                        <a class="btn btn-danger" href="javascript:"
+                                            title="Delete">
+                                            <i class="glyphicon glyphicon-trash"></i>
+                                        </a>
+                                    </div>
+                                </ng-template>
+                            </ngx-datatables-column>
+                        </ngx-datatables>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

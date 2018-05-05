@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.top-container-margin{
+    margin-top: 3.5em;
+}
+
+.content-patch{
+    padding: 1em;
+    min-height: 40em;
+}
+.feather-font-patch{
+    width: 1em;
+    height: 1em;
+}

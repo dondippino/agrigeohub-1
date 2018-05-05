@@ -1,0 +1,36 @@
+<div class="content-patch">
+    <div class="row">
+        <div class="col-sm-3 col-md-2  sidebar">
+            <sidebar-block></sidebar-block>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <div class="col-lg-12 card-deck">
+                <div class="col-lg-8">
+                    <h5 class="card-title">Add New Farmer</h5>
+                    <hr/>
+                    <ngx-form [config]="formConfig"
+                        [item]="item"
+                        (action)="handleAction($event)">
+                    </ngx-form>
+                </div>
+                <div class=" col-lg-4">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">Upload shapefiles</h5>
+                            <small>Open files from your computer</small>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

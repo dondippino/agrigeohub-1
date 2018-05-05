@@ -3,7 +3,8 @@ import { Component, ViewEncapsulation, Input, OnInit} from '@angular/core';
 @Component({
     selector: 'sidebar-block',
     templateUrl: './sidebar.html',
-    styleUrls: ['./sidebar.css']
+    styleUrls: ['./sidebar.css'],
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class SidebarComponent implements OnInit {
     @Input() showTopNav: boolean;

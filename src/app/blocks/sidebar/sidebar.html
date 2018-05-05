@@ -1,0 +1,115 @@
+<div class="col-sm-3 col-md-2 sidebar">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/']">
+                       <i-bar-chart-2 class="feather-font-patch"></i-bar-chart-2>&nbsp;
+                        Dashboard <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Manage Farmers</span>
+                <a class="d-flex align-items-center text-muted">
+                    <i-plus-circle class="feather-font-patch"></i-plus-circle>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/admin','farmers']">
+                       <i-users class="feather-font-patch"></i-users>&nbsp;
+                        List farmers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/admin','farmers','save']">
+                       <i-plus class="feather-font-patch"></i-plus>&nbsp;
+                        Add New Farmer
+                    </a>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Manage Resources</span>
+                <a class="d-flex align-items-center text-muted">
+                    <i-plus-circle class="feather-font-patch"></i-plus-circle>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/admin','resources']">
+                       <i-briefcase class="feather-font-patch"></i-briefcase>&nbsp;
+                        List Resources
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/admin','resources','save']">
+                       <i-plus class="feather-font-patch"></i-plus>&nbsp;
+                        Add New Resource
+                    </a>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Manage Agents</span>
+                <a class="d-flex align-items-center text-muted"  >
+                    <i-plus-circle class="feather-font-patch"></i-plus-circle>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/admin','agents']">
+                       <i-user-plus class="feather-font-patch"></i-user-plus>&nbsp;
+                        List Agents
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/admin','agents','save']">
+                       <i-plus class="feather-font-patch"></i-plus>&nbsp;
+                        Add New Agent
+                    </a>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Manage Users</span>
+                <a class="d-flex align-items-center text-muted">
+                    <i-plus-circle class="feather-font-patch"></i-plus-circle>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/admin','users']">
+                        <i-settings class="feather-font-patch"></i-settings>&nbsp;
+                        List Users
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/admin','users','save']">
+                        <i-plus class="feather-font-patch"></i-plus>&nbsp;
+                        Add New User
+                    </a>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Profile</span>
+                <a class="d-flex align-items-center text-muted" href="#">
+                    <i-plus-circle class="feather-font-patch"></i-plus-circle>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i-user class="feather-font-patch"></i-user>&nbsp;
+                        My Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i-lock class="feather-font-patch"></i-lock>&nbsp;
+                        Change Password
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

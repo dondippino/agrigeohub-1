@@ -1,0 +1,7 @@
+.card-deck {
+    display: inline-flex;
+    /*flex-wrap: nowrap;*/
+}
+.card-body small{
+    color: #777;
+}
