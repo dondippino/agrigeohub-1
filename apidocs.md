@@ -28,85 +28,54 @@
 | Column | Data type | Doc
 | --------   |   -------------   |   -------
 | uuid| uuid | Unique Identifier 
-|   ---   |   ---------   |   ---------------------
 | home_address | text | The home address of the agent
-|   -----------   |   -------------   |   ------------------------------
 | state | text | The state  of the agent  
-|   -----   |   -------   |   ----------------------------------------------------------------
 | lga  | text | The lga of the agent  
-|   ----   |   ------   |   --------------------------------------------------------------------
 | crop | <`crop`> |The crop it has a  one to many relationship  with `crop entity `
-|   ----   |   ---------   |   -----------------------------------------------------------------------------------
 | work_address | text | The work address of the agent 
-|   ---------   |   ---------------   |   ------------------------------
 | occupation | text | The home occupation of the agent
-|   ----------   |   ----------------------   |   ----------------------
 | agent | <`user`> | The auth  info of the agent 
-|   ---------   |   ----------------------   |   -----------------------
 
 ### Cooproative
 
 | Column | Data type | Doc
-|   ----------   |   ----------------------   |   ----------------------
+| --------   |   -------------   |   -------
 | uuid| uuid | Unique Identifier 
-|   ----------   |   ----------------------   |   ----------------------
 | name | text | Name of cooperative 
-|   ----------   |   ----------------------   |   ----------------------
 | state | text | The state  of the cooporative 
-|   ----------   |   ----------------------   |   ----------------------
 | lga  | text | The lga of the corporative 
-|   ----------   |   ----------------------   |   ----------------------
 | about | text | About the corporative 
-|   ----------   |   ----------------------   |   ----------------------
 
 ### Farm
 
 | Column | Data type | Doc
-|   ----------   |   ----------------------   |   ----------------------
+| --------   |   -------------   |   -------
 | uuid| uuid | Unique Identifier 
-|   ----------   |   ----------------------   |   ----------------------
 | size  | integer | The size of the farm 
-|   ----------   |   ----------------------   |   ----------------------
 | state | text | The state host of the farm  
-|   ----------   |   ----------------------   |   ----------------------
 | lga  | text | The lga host of the farm  
-|   ----------   |   ----------------------   |   ----------------------
 | ward   | text | The ward host of the farm  
-|   ----------   |   ----------------------   |   ----------------------
 | crops | <`crop`> |The crop it has a  one to many relationship  with `crop entity `
-|   ----------   |   ----------------------   |   ----------------------
 | longitude | double  | longitude
-|   ----------   |   ----------------------   |   ----------------------
 |  latitude | double | latitude
-|   ----------   |   ----------------------   |   ----------------------
 | fallow | boolean | True id farm is fallow 
-|   ----------   |   ----------------------   |   ----------------------
 | is_mechanized | boolean | True if farm is mechanized
-|   ----------   |   ----------------------   |   ----------------------
+
 
 ### Crop
 | Column | Data type | Doc
-|   ----------   |   ----------------------   |   ----------------------
+| --------   |   -------------   |   -------
 | uuid| uuid | Unique Identifier 
-|   ----------   |   ----------------------   |   ----------------------
 | croptype | text | The type of the crop  
-|   ----------   |   ----------------------   |   ----------------------
 | expected_yield_weight  | integer | The expected yeild weight if `is_harvested` is false
-|   ----------   |   ----------------------   |   ----------------------
 | yield_weight  | integer | The expected yeild weight if `is_harvested` is true
-|   ----------   |   ----------------------   |   ----------------------
 | date_planted  | Date | The Date planted 
-|   ----------   |   ----------------------   |   ----------------------
 | expected_yield_date  | Date | The expected yield date   
-|   ----------   |   ----------------------   |   ----------------------
 | is_harvested | boolean | true if crop is harvested 
-|   ----------   |   ----------------------   |   ----------------------
 | is_currently_cultivated | boolean   | true if crop is under cultivation
-|   ----------   |   ----------------------   |   ----------------------
 |  requires_fertilizer| boolean | 
-|   ----------   |   ----------------------   |   ----------------------
 | frequires_pesticide | boolean | 
-|   ----------   |   ----------------------   |   ----------------------
+
 
 # Api definition 
 Find detailed desciption about api compontents
