@@ -7,9 +7,9 @@
    * __Cooperative__ Coopoerative provide access to various resource for farmers and farm lands end points exist for creating a corpoerative 
    * __Farms__ Farms are owned by farmers, and farm can contain many crops 
    * __Crops__ Crops refer to a particular entity on a farm it has its attribute and end points exist for getting multiple attributes of crops 
+   Asset Allocation: 
+   Users can allocate assets like fertilizer and mechanized equipments
 
-
-## Models  (Database Tables ) 
 
 
 ## Models  (Database Tables ) 
@@ -80,11 +80,19 @@
 | frequires_pesticide | boolean | 
 
 
-   url(r'^api/create/crop/$', crops_Collection.as_view()),
-    url(r'^api/create/farm/$', farm_Collection.as_view()),
-    url(r'^api/create/coorporative/$', coorperative_Collection.as_view()),
-    url(r'^api/create/farmer/$', farmer_profile_Collection.as_view()),   
-    url(r'^api/create/agent/$', agent_profile_Collection.as_view()),
+### Asset Allocation
+| Column | Data type | Doc
+| --------   |   -------------   |   -------
+| uuid| uuid | Unique Identifier 
+| asset_type | text | The type of the asset 
+| asset_weight  | integer | The weight of the asset 
+| asset_authority  | text | The authority who is allocating or selling the asset
+| farmland  | <`farmland`> | Farmland where assets is going this is a one to one relationship and cannot be edited just created and called
+| date_issued  | Date | Date asset was dispatched  
+| Quantity  | integer  | For finite asssets like bags of fertilizer
+| description | text  | Any other description
+
+
 # Api definition 
 Find detailed desciption about api compontents
 ## Base api is defined as 
@@ -100,6 +108,12 @@ All end point must be prefixed with this url
    * __GET__ `/api/find/farmer/<uuid>/` 
 - __Get all farmer profiles on the platform__
    * __GET__ `/api/all/farmers/` 
+
+### Asset allocation 
+- __Create an asset instance__
+   * __POST__ `/api/create/asset/` 
+- __Get an asset instance__
+   * __GET__ `/api/find/asset/<uuid>/` 
 
 ### Farm 
 - __Create a farm instance__
