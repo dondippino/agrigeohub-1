@@ -1,8 +1,7 @@
 import {Component, ViewEncapsulation, OnInit, OnDestroy, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 import {Router} from '@angular/router';
 import {DomSanitizer, Title} from '@angular/platform-browser';
-import {latLng} from 'leaflet';
-import {tileLayer} from 'leaflet';
+import {latLng, tileLayer} from 'leaflet';
 import * as shape from 'd3-shape';
 import * as d3 from 'd3';
 

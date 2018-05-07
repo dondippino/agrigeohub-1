@@ -20,6 +20,7 @@
                             <h5 class="card-title">Upload shapefiles</h5>
                             <small>Open files from your computer</small>
                             <hr/>
+                            <input type="file" class="custom-file-input" #uploader>
                         </div>
                     </div>
                 </div>
@@ -29,8 +30,24 @@
     </div>
 
 </div>
+<!-- Map modal -->
 
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">Preview Shapefile</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <!--<leaflet-map [leafletOptions]="leafletOptions" [layers]="layers" (leafletMapReady)="onMapReady($event)"></leaflet-map>-->
+        <div class="map" leaflet [(leafletOptions)]="leafletOptions" [leafletLayersControl]="layersControl" [leafletFitBounds]="fitBounds" [leafletLayers]="layers" (leafletMapReady)="onMapReady($event)"></div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
 
-
+<!--<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>-->
 
 
