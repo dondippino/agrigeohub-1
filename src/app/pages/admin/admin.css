@@ -103,3 +103,11 @@ body {
     display: inline-block;
     border-radius: 50%;
 }
+
+
+:host ::ng-deep .card-body small{
+    color: #777;
+}
+:host ::ng-deep .align-vertical-middle{
+    vertical-align: middle;
+}

@@ -11,7 +11,7 @@
                     <div class="col-12 table-responsive-sm">
                         <hr/>
                         <div class="btn-group btn-group-toggle center" data-toggle="buttons">
-                            <button type="button" class="btn btn-outline-primary"><i-plus class="middle-align feather-font-patch"></i-plus>&nbsp;Add New Farmer</button>
+                            <button [routerLink]="['/admin/farmers/save']" type="button" class="btn btn-sm btn-primary"><i-plus class="middle-align feather-font-patch"></i-plus>&nbsp;Add New Farmer</button>
                         </div>
                         <hr/>
                         <table class="table table-striped table-sm" [data]="data" [options]="options" ngxDatatables>
@@ -24,7 +24,7 @@
                             </thead>
                         </table>
 
-<!--                        <ngx-datatables [ajax]="ajax">
+                        <ngx-datatables [ajax]="ajax">
                             <ngx-datatables-column header="Name"></ngx-datatables-column>
                             <ngx-datatables-column header="Position"></ngx-datatables-column>
                             <ngx-datatables-column header="Office"></ngx-datatables-column>
@@ -35,17 +35,17 @@
                                 <ng-template ngxDatatablesTemplate="body" let-context>
                                     <div>
                                         <a class="btn btn-success" href="javascript:"
-                                            title="Edit">
+                                           title="Edit">
                                             <i class="glyphicon glyphicon-pencil"></i>
                                         </a>
                                         <a class="btn btn-danger" href="javascript:"
-                                            title="Delete">
+                                           title="Delete">
                                             <i class="glyphicon glyphicon-trash"></i>
                                         </a>
                                     </div>
                                 </ng-template>
                             </ngx-datatables-column>
-                        </ngx-datatables>-->
+                        </ngx-datatables>
                     </div>
                 </div>
             </div>

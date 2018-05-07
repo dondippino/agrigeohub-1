@@ -16,7 +16,7 @@ export class AdminComponent implements OnInit, AfterViewInit, OnDestroy {
 
     }
     ngOnInit() {
-        this.titleService.setTitle("Dynetro | Dashboard");
+        this.titleService.setTitle("AlgroHub ");
     }
 
     ngAfterViewInit() {

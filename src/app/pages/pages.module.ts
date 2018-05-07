@@ -20,6 +20,7 @@ import {AgentsComponent} from './admin/agents//agents.component';
 import {SaveAgentComponent} from './admin/agents/save-agent/save-agent.component';
 import {ResourcesComponent} from './admin/resources//resources.component';
 import {SaveResourcesComponent} from './admin/resources//save-resources/save-resources.component';
+import {DashboardComponent} from './admin/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -27,10 +28,10 @@ import {SaveResourcesComponent} from './admin/resources//save-resources/save-res
         PluginsModule, BlocksModule, BrowserModule, FormsModule, HttpModule, CommonModule, RouterModule, IconsModule
     ],
     declarations: [
-        HomeComponent, FarmerManagementComponent, AdminComponent, SaveFarmerComponent, LoginComponent, UsersComponent, SaveUserComponent, AgentsComponent, SaveAgentComponent, ResourcesComponent, SaveResourcesComponent
+        HomeComponent, FarmerManagementComponent, AdminComponent, SaveFarmerComponent, LoginComponent, UsersComponent, SaveUserComponent, AgentsComponent, SaveAgentComponent, ResourcesComponent, SaveResourcesComponent, DashboardComponent
     ],
     exports: [
-        HomeComponent, BlocksModule, FarmerManagementComponent, AdminComponent, RouterModule, IconsModule, SaveFarmerComponent, LoginComponent, UsersComponent, SaveUserComponent, AgentsComponent, SaveAgentComponent, ResourcesComponent, SaveResourcesComponent
+        HomeComponent, BlocksModule, FarmerManagementComponent, AdminComponent, RouterModule, IconsModule, SaveFarmerComponent, LoginComponent, UsersComponent, SaveUserComponent, AgentsComponent, SaveAgentComponent, ResourcesComponent, SaveResourcesComponent, DashboardComponent
     ]
 })
 export class PagesModule {}

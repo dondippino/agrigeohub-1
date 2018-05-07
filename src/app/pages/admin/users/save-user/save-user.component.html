@@ -4,8 +4,20 @@
             <sidebar-block></sidebar-block>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 *ngIf="!isEdit" class="card-title"><i-settings class="feather-font-patch align-vertical-middle"></i-settings>&nbsp;Create a new user</h5>
+                    <small *ngIf="!isEdit">Please fill in details for new user</small>
+                    <h5 *ngIf="isEdit" class="card-title"><i-settings class="feather-font-patch align-vertical-middle"></i-settings>&nbsp;Edit user</h5>
+                    <small *ngIf="isEdit">Please edit details of user</small>
+                    <hr/>
+                    <ngx-form [config]="formConfig"
+                        [item]="appUser"
+                        (action)="handleAction($event)">
+                    </ngx-form>
+                </div>
+            </div>
 
-          
         </div>
     </div>
 
